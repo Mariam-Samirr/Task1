@@ -1,0 +1,7 @@
+import pytesseract
+from PIL import Image
+import pyttsx3
+pic=Image.open("C:/Users/Future/OneDrive - Faculty Of Computer and Information Technology (Ain Shams University)/Desktop/task.png")
+pytesseract.pytesseract.tesseract_cmd ='C:/Program Files/Tesseract-OCR/tesseract.exe'
+ans=pytesseract.image_to_string(pic)
+print(ans)
